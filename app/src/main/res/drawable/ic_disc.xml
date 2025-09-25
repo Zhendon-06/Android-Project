@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="300dp"
+    android:height="300dp"
+    android:viewportWidth="300"
+    android:viewportHeight="300">
+
+    <!-- 外圈黑胶 -->
+    <path
+        android:fillColor="#222222"
+        android:pathData="M150,0 A150,150 0 1,1 149.9,0Z"/>
+
+    <!-- 内圈（唱片凹槽效果） -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M150,40 A110,110 0 1,1 149.9,40Z"/>
+    <path
+        android:fillColor="#222222"
+        android:pathData="M150,80 A70,70 0 1,1 149.9,80Z"/>
+
+    <!-- 中心圆 -->
+    <path
+        android:fillColor="#888888"
+        android:pathData="M150,130 A20,20 0 1,1 149.9,130Z"/>
+</vector>

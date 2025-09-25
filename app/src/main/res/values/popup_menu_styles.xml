@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    自定义弹出菜单样式配置文件
+    
+    功能：
+    1. 定义PopupMenu的自定义样式
+    2. 应用透明模糊背景效果
+    3. 移除默认的选择器效果
+    4. 提供现代化的菜单体验
+    
+    技术实现：
+    - 继承自Widget.AppCompat.PopupMenu
+    - 使用自定义drawable作为背景
+    - 设置透明选择器避免默认效果
+    - 兼容不同Android版本
+-->
+<resources>
+    
+    <!-- 
+        自定义弹出菜单样式
+        继承自AppCompat的PopupMenu样式
+        提供透明模糊背景和现代化外观
+    -->
+    <style name="CustomPopupMenu" parent="Widget.AppCompat.PopupMenu">
+        <!-- 
+            弹出菜单背景
+            使用自定义的透明模糊背景drawable
+            提供毛玻璃效果和阴影
+        -->
+        <item name="android:popupBackground">@drawable/popup_menu_with_shadow</item>
+        
+        <!-- 
+            下拉选择器
+            设置为透明，移除默认的选中效果
+            避免与自定义背景冲突
+        -->
+        <item name="android:dropDownSelector">@android:color/transparent</item>
+        
+        <!-- 
+            列表选择器
+            设置为透明，移除默认的选中效果
+            保持菜单的简洁外观
+        -->
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+    
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:background="@color/white">
+
+    <!-- 左侧标题 -->
+    <TextView
+        android:id="@+id/tv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="主页"
+        android:textColor="@color/black"
+        android:textSize="54sp" />
+
+    <!-- 右侧用户名区域：将最右边的控件（user_name）靠右对齐 -->
+
+    <!-- 用户名靠右 -->
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="用户"
+        android:textSize="36sp"
+        android:textColor="@color/black" />
+
+    <!-- 头像在用户名左边 -->
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_toStartOf="@id/user_name"
+        android:layout_centerVertical="true"
+        android:paddingEnd="8dp"
+        android:src="@drawable/yonghu" />
+
+</RelativeLayout>

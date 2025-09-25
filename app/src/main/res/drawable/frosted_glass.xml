@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 更柔和的渐变背景，模拟毛玻璃效果 -->
+    <gradient
+        android:startColor="#F2F8F8F8"
+        android:endColor="#E8F0F0F0"
+        android:angle="90" />
+
+    <!-- 圆角玻璃效果 -->
+    <corners android:radius="20dp" />
+
+    <!-- 更细腻的边框 -->
+    <stroke
+        android:width="0dp"
+        android:color="#00FFFFFF" />
+
+</shape>

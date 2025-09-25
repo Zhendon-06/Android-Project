@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nav_all_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 固定悬浮层：包含音乐条、底部导航、搜索按钮 -->
+    <FrameLayout
+        android:id="@+id/floating_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@android:color/transparent"
+        android:elevation="8dp">
+
+        <!-- 音乐播放条（居中底部，略高于导航栏） -->
+        <include
+            layout="@layout/music_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="85dp" />
+
+        <!-- 底部导航（靠左对齐） -->
+        <include
+            layout="@layout/nav"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|start"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- 搜索按钮（靠右对齐） -->
+        <include
+            layout="@layout/search"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp" />
+
+    </FrameLayout>
+
+</FrameLayout>

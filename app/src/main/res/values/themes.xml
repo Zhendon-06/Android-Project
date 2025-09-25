@@ -1,0 +1,51 @@
+<!--
+    BanaMusic 应用主题配置文件
+    
+    主题特点：
+    1. 基于Material Design 3设计规范
+    2. 支持日间/夜间主题切换
+    3. 无ActionBar设计，使用自定义ActionBar
+    4. 白色背景主题，简洁清爽
+    5. 自定义PopupMenu样式，支持透明模糊效果
+    
+    设计理念：
+    - 现代化UI设计
+    - 良好的用户体验
+    - 一致的视觉风格
+    - 响应式设计
+-->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    <!-- 
+        基础主题样式
+        继承自Material Design 3的无ActionBar主题
+        提供应用的基础样式配置
+    -->
+    <style name="Base.Theme.BanaMusic" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 自定义主题颜色配置 -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        
+        <!-- 窗口背景色：纯白色，提供简洁的视觉体验 -->
+        <item name="android:windowBackground">@color/white</item>
+        
+        <!-- 表面颜色：白色，用于卡片、对话框等组件 -->
+        <item name="colorSurface">@color/white</item>
+        
+        <!-- 背景颜色：白色，用于Activity背景 -->
+        <item name="android:colorBackground">@color/white</item>
+        
+        <!-- 
+            自定义PopupMenu样式
+            应用透明模糊背景效果
+            提供现代化的弹出菜单体验
+        -->
+        <item name="android:popupMenuStyle">@style/CustomPopupMenu</item>
+    </style>
+
+    <!-- 
+        应用主题
+        继承自基础主题，作为应用的主主题使用
+    -->
+    <style name="Theme.BanaMusic" parent="Base.Theme.BanaMusic" />
+    
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    app:cardCornerRadius="35dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:strokeColor="#80FFFFFF"
+    app:strokeWidth="2dp">
+    <!-- 模糊背景层（最下层） -->
+    <View
+        android:id="@+id/search_blur"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/frosted_glass"
+        android:layout_margin="1dp"/>
+
+</com.google.android.material.card.MaterialCardView>

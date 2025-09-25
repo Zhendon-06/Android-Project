@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- 深色渐变玻璃质感 -->
+    <gradient
+        android:startColor="#E2F0F0F0"
+    android:endColor="#CCF6F3F3"
+    android:angle="90" />
+
+    <!-- 内部阴影/内边缘高光模拟 -->
+    <padding
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp" />
+
+</shape>

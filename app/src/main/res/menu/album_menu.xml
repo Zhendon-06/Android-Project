@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    专辑页面弹出菜单资源文件
+    
+    菜单功能：
+    1. 分享专辑：分享当前专辑信息到其他应用
+    2. 播放专辑：开始播放专辑中的所有歌曲
+    
+    设计特点：
+    - 简洁的菜单选项，避免功能冗余
+    - 使用直观的图标和文字
+    - 支持透明模糊背景效果
+    - 符合Material Design规范
+-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 
+        分享专辑菜单项
+        功能：分享当前专辑的链接、封面等信息
+        图标：使用collect图标表示分享功能
+    -->
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/collect"
+        android:title="分享" />
+    
+    <!-- 
+        播放专辑菜单项
+        功能：开始播放专辑中的所有歌曲
+        图标：使用play图标表示播放功能
+    -->
+    <item
+        android:id="@+id/action_play"
+        android:icon="@drawable/play"
+        android:title="播放" />
+        
+</menu>

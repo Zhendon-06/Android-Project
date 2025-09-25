@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <!-- 唱盘区域 -->
+    <FrameLayout
+        android:id="@+id/container_disc_lyrics"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+    <!-- 唱片 -->
+    <ImageView
+        android:id="@+id/iv_disc"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ic_disc"
+        android:layout_gravity="center"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <!-- 歌曲封面 -->
+    <ImageView
+        android:id="@+id/iv_album"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fengmian"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_circle_mask"
+        android:clipToOutline="true"
+        android:clickable="false"
+        android:focusable="false" />
+    </FrameLayout>
+
+</LinearLayout>

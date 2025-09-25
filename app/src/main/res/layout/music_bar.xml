@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/music_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_gravity="bottom"
+    app:cardCornerRadius="35dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:background="@android:color/transparent"
+    app:strokeColor="@android:color/transparent"
+    app:strokeWidth="0dp">
+
+    <!-- 1. 模糊背景层（最下层，独立模糊效果） -->
+<View
+android:id="@+id/music_bar_blur"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/frosted_glass"
+android:clipToOutline="true"
+android:importantForAccessibility="no"
+/>
+
+    <!-- 2. 内容层（位于模糊层上方） -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="horizontal"
+android:paddingStart="20dp"
+android:paddingEnd="16dp"
+android:gravity="center_vertical"
+android:background="@android:color/transparent">
+
+<!-- 专辑封面 -->
+<ImageView
+    android:id="@+id/iv_album_cover"
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/fengmian"
+    android:background="@android:color/transparent"/>
+
+<!-- 歌曲名称 -->
+<TextView
+    android:id="@+id/tv_song_name"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="12dp"
+    android:layout_weight="1"
+    android:background="@android:color/transparent"
+    android:ellipsize="end"
+    android:maxLines="1"
+    android:text="晴天"
+    android:textColor="@android:color/black"
+    android:textSize="16sp" />
+
+<!-- 播放按钮 -->
+<ImageView
+    android:id="@+id/iv_play"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:src="@drawable/play"
+    android:background="@android:color/transparent"/>
+
+</LinearLayout>
+    </com.google.android.material.card.MaterialCardView>

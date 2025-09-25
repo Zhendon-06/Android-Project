@@ -1,0 +1,5 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true"
+        android:drawable="@drawable/zhuye_on" />
+    <item android:drawable="@drawable/zhuye_off" />
+</selector>
